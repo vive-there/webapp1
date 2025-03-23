@@ -14,6 +14,8 @@ public class PrivacyModel : PageModel
 
     public void OnGet()
     {
+        _logger.LogInformation("Privacy page visited at {time}", DateTime.Now);
+        throw new Exception("This is a test exception");
     }
 }
 
